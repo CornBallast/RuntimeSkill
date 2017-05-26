@@ -96,11 +96,11 @@
 //    class_addMethod(object_getClass(self), sel, method_getImplementation(aMethod), "v@:");
 //    return YES;
 //}
-
+//消息转发第二个步 可返回一个可以处理该事件的对象
 //-(id)forwardingTargetForSelector:(SEL)aSelector{
 //    return [[Boss alloc] init];
 //}
-
+//消息转发第三步 返回方法签名。如果返回nil，则表示无法处理消息 调用-doesNotRecognizeSelector
 //- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
 //    if ([NSStringFromSelector(aSelector) isEqualToString:@"unKnowSel_obj"]) {
 //        return [NSMethodSignature signatureWithObjCTypes:"v@:"];
@@ -108,9 +108,16 @@
 //    return [super methodSignatureForSelector:aSelector];
 //}
 
-
+// 第四步，如果第三部返回了方法签名才会进入这一步，这一步用户调用方法,当我们实现了此方法后，-doesNotRecognizeSelector:不会再被调用。也就是不会crash
 //-(void)forwardInvocation:(NSInvocation *)anInvocation{
 //    [anInvocation invokeWithTarget:[[Boss alloc] init]];
 //}
+
+//- (void)doesNotRecognizeSelector:(SEL)aSelector {
+//    NSLog(@"无法处理消息：%@", NSStringFromSelector(aSelector));
+//}
+
+
+
 
 @end

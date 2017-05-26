@@ -23,11 +23,15 @@
  */
 + (void)swizzleClassSelector:(SEL)originalSelector withClassSelector:(SEL)swizzledSelector;
 
-#pragma mark - class_copyIvarList
+#pragma mark - class_copyIvarList   class_copyPropertyList
 /**
  *获取当前类的所有实例变量
  */
 +(void)getAllIvarNameWithClass:(Class)YSClass Completed:(void (^)(NSArray *ivarNameArray))completed;
+/**
+ *获取当前类的所有属性
+ */
++(void)getAllPropertyNameWithClass:(Class)YSClass Completed:(void (^)(NSArray *propertyNameArray))completed;
 
 #pragma mark - objc_msgSend (限制五个个参数及以内)
 /**

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A9FB7111ED6A803004A17A7 /* NSArray+name.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FB7101ED6A803004A17A7 /* NSArray+name.m */; };
+		5A9FB7171ED7DDF4004A17A7 /* Boss.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FB7161ED7DDF4004A17A7 /* Boss.m */; };
+		5A9FB71A1ED811F7004A17A7 /* NSNull+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FB7191ED811F7004A17A7 /* NSNull+safe.m */; };
+		5A9FB7201ED81C52004A17A7 /* UIView+CategoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9FB71F1ED81C52004A17A7 /* UIView+CategoryTest.m */; };
 		5AB6CEE81EC42EF1003C7483 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6CEE71EC42EF1003C7483 /* main.m */; };
 		5AB6CEEB1EC42EF1003C7483 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6CEEA1EC42EF1003C7483 /* AppDelegate.m */; };
 		5AB6CEEE1EC42EF1003C7483 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6CEED1EC42EF1003C7483 /* ViewController.m */; };
@@ -16,9 +20,18 @@
 		5AB6CEFF1EC4325F003C7483 /* NSObject+YSRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6CEFE1EC4325F003C7483 /* NSObject+YSRuntime.m */; };
 		5AB6CF051EC43BA2003C7483 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6CF041EC43BA2003C7483 /* Person.m */; };
 		5AB6CF081EC44E62003C7483 /* Person+Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6CF071EC44E62003C7483 /* Person+Character.m */; };
+		5AFB8D5B1ECAC94A00092950 /* Person+SleepControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB8D5A1ECAC94A00092950 /* Person+SleepControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A9FB70F1ED6A803004A17A7 /* NSArray+name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+name.h"; sourceTree = "<group>"; };
+		5A9FB7101ED6A803004A17A7 /* NSArray+name.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+name.m"; sourceTree = "<group>"; };
+		5A9FB7151ED7DDF4004A17A7 /* Boss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boss.h; sourceTree = "<group>"; };
+		5A9FB7161ED7DDF4004A17A7 /* Boss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boss.m; sourceTree = "<group>"; };
+		5A9FB7181ED811F7004A17A7 /* NSNull+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+safe.h"; sourceTree = "<group>"; };
+		5A9FB7191ED811F7004A17A7 /* NSNull+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+safe.m"; sourceTree = "<group>"; };
+		5A9FB71E1ED81C52004A17A7 /* UIView+CategoryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CategoryTest.h"; sourceTree = "<group>"; };
+		5A9FB71F1ED81C52004A17A7 /* UIView+CategoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CategoryTest.m"; sourceTree = "<group>"; };
 		5AB6CEE31EC42EF1003C7483 /* RuntimeSkill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RuntimeSkill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AB6CEE71EC42EF1003C7483 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5AB6CEE91EC42EF1003C7483 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,6 +49,8 @@
 		5AB6CF041EC43BA2003C7483 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		5AB6CF061EC44E62003C7483 /* Person+Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+Character.h"; sourceTree = "<group>"; };
 		5AB6CF071EC44E62003C7483 /* Person+Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+Character.m"; sourceTree = "<group>"; };
+		5AFB8D591ECAC94A00092950 /* Person+SleepControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+SleepControl.h"; sourceTree = "<group>"; };
+		5AFB8D5A1ECAC94A00092950 /* Person+SleepControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+SleepControl.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +89,21 @@
 				5AB6CEED1EC42EF1003C7483 /* ViewController.m */,
 				5AB6CF031EC43BA2003C7483 /* Person.h */,
 				5AB6CF041EC43BA2003C7483 /* Person.m */,
+				5A9FB7151ED7DDF4004A17A7 /* Boss.h */,
+				5A9FB7161ED7DDF4004A17A7 /* Boss.m */,
+				5AFB8D591ECAC94A00092950 /* Person+SleepControl.h */,
+				5AFB8D5A1ECAC94A00092950 /* Person+SleepControl.m */,
 				5AB6CF061EC44E62003C7483 /* Person+Character.h */,
 				5AB6CF071EC44E62003C7483 /* Person+Character.m */,
 				5AB6CEFD1EC4325F003C7483 /* NSObject+YSRuntime.h */,
 				5AB6CEFE1EC4325F003C7483 /* NSObject+YSRuntime.m */,
 				5AB6CF011EC432F7003C7483 /* YSAssociated.h */,
+				5A9FB70F1ED6A803004A17A7 /* NSArray+name.h */,
+				5A9FB7101ED6A803004A17A7 /* NSArray+name.m */,
+				5A9FB71E1ED81C52004A17A7 /* UIView+CategoryTest.h */,
+				5A9FB71F1ED81C52004A17A7 /* UIView+CategoryTest.m */,
+				5A9FB7181ED811F7004A17A7 /* NSNull+safe.h */,
+				5A9FB7191ED811F7004A17A7 /* NSNull+safe.m */,
 				5AB6CEEF1EC42EF1003C7483 /* Main.storyboard */,
 				5AB6CEF21EC42EF1003C7483 /* Assets.xcassets */,
 				5AB6CEF41EC42EF1003C7483 /* LaunchScreen.storyboard */,
@@ -168,10 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A9FB71A1ED811F7004A17A7 /* NSNull+safe.m in Sources */,
 				5AB6CEEE1EC42EF1003C7483 /* ViewController.m in Sources */,
+				5AFB8D5B1ECAC94A00092950 /* Person+SleepControl.m in Sources */,
 				5AB6CEEB1EC42EF1003C7483 /* AppDelegate.m in Sources */,
+				5A9FB7201ED81C52004A17A7 /* UIView+CategoryTest.m in Sources */,
 				5AB6CF051EC43BA2003C7483 /* Person.m in Sources */,
 				5AB6CEFF1EC4325F003C7483 /* NSObject+YSRuntime.m in Sources */,
+				5A9FB7111ED6A803004A17A7 /* NSArray+name.m in Sources */,
+				5A9FB7171ED7DDF4004A17A7 /* Boss.m in Sources */,
 				5AB6CF081EC44E62003C7483 /* Person+Character.m in Sources */,
 				5AB6CEE81EC42EF1003C7483 /* main.m in Sources */,
 			);
@@ -336,6 +366,7 @@
 				5AB6CEFC1EC42EF1003C7483 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

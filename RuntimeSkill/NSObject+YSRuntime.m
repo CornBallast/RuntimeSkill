@@ -35,7 +35,7 @@
     }
 }
 
-#pragma mark - class_copyIvarList
+#pragma mark - class_copyIvarList  class_copyPropertyList
 /**
  *获取当前类的所有实例变量
  */
@@ -54,6 +54,26 @@
     }
     if (completed) completed(ivarNameArray);
 }
+
+/**
+ *获取当前类的所有属性
+ */
++(void)getAllPropertyNameWithClass:(Class)YSClass Completed:(void (^)(NSArray *propertyNameArray))completed{
+    NSMutableArray *propertyNameArray = [NSMutableArray array];
+    unsigned int propertyCount = 0;
+    objc_property_t *propertys = class_copyPropertyList(YSClass, &propertyCount);
+    for (int i = 0; i < propertyCount; i++){
+        objc_property_t property = propertys[i];
+        const char *propertysName = property_getName(property);
+        NSString *propertysNameCode = [NSString stringWithUTF8String:propertysName];
+#ifdef _YSDebugLog
+        NSLog(@"------%d : %@",i,propertysNameCode);
+#endif
+        [propertyNameArray addObject:propertysNameCode];
+    }
+    if (completed) completed(propertyNameArray);
+}
+
 
 #pragma mark - objc_msgSend
 
